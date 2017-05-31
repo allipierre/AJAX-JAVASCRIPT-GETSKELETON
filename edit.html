@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Website to help People">
+  <meta name="author" content="Alli Pierre Yotti">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+   <script type="json/javascript"  src="js/file.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="js/site.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+   <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
+   <script src="js/sweetalerte.min.js"></script>
+   <link href="css/sweetalerte.css" rel="stylesheet">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+.tre{
+  background: rgb(15, 160, 206) !important;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.de{
+  background-color: rgb(255, 0, 0) !important;
+  border-color: rgb(255, 0, 0) !important;
+}
+
+.dr{
+  color: rgb(255, 255, 255) !important;
+    background-color: rgb(88, 88, 88) !important;
+    border-color: rgb(88, 88, 88) !important;
+}
+
+th,td{
+  text-align: center;
+}
+
+able.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: rgb(51, 51, 51) !important;
+    border: 1px solid rgb(30, 174, 219) !important;
+    background-color: rgb(255, 255, 255) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+}
+
+.ef {
+    background: rgb(30, 174, 219) !important;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+tr:nth-child(even):hover {background: red}
+tr:nth-child(odd):hover {background: orange}
+
+
+  </style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="index.html">Intro</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
+            <div id="codeNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="#grid">Grid</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#typography">Typography</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#buttons">Buttons</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#forms">Forms</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#lists">Lists</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#code">Code</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#tables">Tables</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="datatable.html">Datatables</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#utilities">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a>
+            <div id="moreNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton">On Github</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#browser-support">Browsers</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#license">License</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#extensions">Extensions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton/releases">Versions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#colophon">Colophon</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top:5em;">
+    <div class="row">
+      <div class="two-thirds column">
+        <h1>Welcome, this a Website for Developer.</h1>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <div class="container">
+
+      <!-- The above form looks like this -->
+<form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Employee</label>
+      <input class="u-full-width" type="text" placeholder="Employee" id="Employee" name="Employee">
+    </div>
+    <div class="six columns">
+      <label for="exampleEmailInput">Job</label>
+      <input class="u-full-width" type="text" placeholder="Job" id="Job">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Hiredate</label>
+      <input class="u-full-width" type="text" placeholder="Hiredate" id="Hiredate">
+    </div>
+    <div class="six columns">
+      <label for="exampleEmailInput">Manager</label>
+      <input class="u-full-width" type="text" placeholder="Manager" id="Manager">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Salary</label>
+      <input class="u-full-width" type="text" placeholder="Salary" id="Salary">
+    </div>
+    <div class="six columns">
+      <label for="exampleEmailInput">Department</label>
+      <input class="u-full-width" type="text" placeholder="Department" id="Department">
+    </div>
+  </div>
+  <div class="row">
+    <div class="two columns">
+      <label id="target"></label>
+      <label for="exampleEmailInput">Empno</label>
+      <input class="u-full-width" type="text" placeholder="empno" id="empno">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput">
+        <option value="8560">Select value</option>
+      </select>
+    </div>
+
+    <div class="three columns">
+      <label for="exampleEmailInput">Namoe</label>
+      <input class="u-full-width" type="text" placeholder="name" id="name">
+    </div>
+    </div>
+
+  <button onclick="void(0);" class="bt button-primary" id="submit">submit</button>
+  <a  class="bts button button-primary" id="submit">update</a>
+</form>
+
+
+      </div>
+
+
+    <div class="container">
+<p></p>
+    </div>
+
+
+    <script>
+
+/*
+
+Get the id Value in a Variable and use it for the Rest webservice
+
+*/
+     var id  = localStorage.getItem("IDS");
+
+
+    $(document).ready(function() {
+        $.ajax({
+            url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/'+id
+        }).then(function(data) {
+           $('#empno').val(data.empno);
+           $('#Employee').val(data.ename);
+           $('#Job').val(data.job);
+           $('#Manager').val(data.mgr);
+           $('#Department').val(data.deptno);
+           $('#Salary').val(data.sal);
+           $('#Hiredate').val(data.hiredate);
+        });
+
+
+
+  $( ".bt" ).on( "click", function(){
+
+    /*var person = {
+           ename: $("#Employee").val(),
+           job:   $("#Job").val(),
+           mgr:$("#Manager").val()
+       }*/
+
+       $('#target').html('sending..');
+
+       $.ajax({
+           url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/',
+           type: 'post',
+           dataType: 'json',
+           data: {
+                  ename: $("#Employee").val(),
+                  job:   $("#Job").val(),
+                  mgr:   $("#Manager").val(),
+                  sal:   $("#Salary").val(),
+                  deptno:$("#Department").val()
+              },
+           success: function (data) {
+               $('#target').html(data.msg);
+               console.log("a");
+           }
+
+       });
+
+
+
+    });
+
+
+
+    $( ".bts" ).on( "click", function(){
+
+      /*var person = {
+             ename: $("#Employee").val(),
+             job:   $("#Job").val(),
+             mgr:$("#Manager").val()
+         }*/
+
+         $('#target').html('sending..');
+
+         $.ajax({
+             url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/'+id,
+             type: 'PUT',
+             dataType: 'json',
+             "Content-Type": "application/json",
+             data: {
+                    empno: id,
+                    ename: $("#Employee").val(),
+                    job:   $("#Job").val(),
+                    mgr:   $("#Manager").val(),
+                    sal:   $("#Salary").val(),
+                    deptno:$("#Department").val()
+                },
+             success: AjaxSucceedede
+
+         });
+
+
+
+      });
+
+
+
+      $.ajax({
+          url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/',
+          dataType : 'json',
+          success: function(pData)
+                 {
+                      for(i=0; i<pData.items.length;i++) {
+                         var rv = pData.items[i].empno;  // Append Display values to a variable
+                         var dv = pData.items[i].hiredate;   // Append Return values  to a variable
+                          $("#exampleRecipientInput").append('<option value="'+rv+'">'+rv+'</option>'); //Now all those variable to Option List(List B)
+                              console.log(rv);
+
+                       }
+             }  ,
+          error: AjaxFailed
+
+      });
+
+$( "#exampleRecipientInput" ).change(function() {
+var ut=$("#exampleRecipientInput").val();
+
+    $.ajax({
+        url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/"+ut
+    }).then(function(data) {
+       $('#name').val(data.ename);
+    });
+
+});
+
+      });
+    </script>
+ <script type="text/javascript"  src="js/file.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>

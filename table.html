@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Website to help People">
+  <meta name="author" content="Alli Pierre Yotti">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+   <script type="json/javascript"  src="js/file.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="js/site.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+   <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+.tre{
+  background: rgb(15, 160, 206) !important;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+th,td{
+  text-align: center;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+tr:nth-child(even):hover {background: red}
+tr:nth-child(odd):hover {background: orange}
+
+
+  </style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="index.html">Intro</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
+            <div id="codeNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="#grid">Grid</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#typography">Typography</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#buttons">Buttons</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#forms">Forms</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#lists">Lists</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#code">Code</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#tables">Tables</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="datatable.html">DataTable</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#utilities">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a>
+            <div id="moreNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton">On Github</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#browser-support">Browsers</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#license">License</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#extensions">Extensions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton/releases">Versions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#colophon">Colophon</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top:5em;">
+    <div class="row">
+      <div class="two-thirds column">
+        <h1>Welcome, this a Website for Developer.</h1>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <table id="records_table" class="u-full-width" border='1'>
+    <tr class="tre">
+        <th align="center" width="50">ID</th>
+        <th align="center" width="100">Employee</th>
+        <th align="center" width="100">job</th>
+        <th align="center" width="100">hiredate</th>
+        <th align="center" width="150">Manager</th>
+        <th align="center" width="100">Salary</th>
+        <th align="center" width="100">Depatment</th>
+    </tr>
+</table>
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+<script>
+  $(document).ready(function()
+  {
+      $.ajax({
+          url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/",
+          success: function (data)
+{
+    console.log(data);
+    var trHTML = '';
+
+    for(var i = 0; i < data.items.length; i++)
+    {
+        trHTML +=
+        '<tr><td>' + data.items[i].empno +
+        '</td><td>' + data.items[i].ename +
+        '</td><td>' + data.items[i].job +
+        '</td><td>' + data.items[i].hiredate +
+        '</td><td>' + data.items[i].mgr +
+        '</td><td>' + data.items[i].sal +
+        '</td><td>' + data.items[i].deptno +
+        '</td></tr>';
+    };
+    $('#records_table').append(trHTML);
+}
+      });
+  });
+  </script>
+  <div class="container">
+  <a class="button button-primary" href="#">Next</a>
+  </div>
+
+
+
+    </script>
+ <script type="text/javascript"  src="js/file.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
