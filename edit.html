@@ -264,31 +264,31 @@ Get the id Value in a Variable and use it for the Rest webservice
 
 
 
-  $( ".bt" ).on( "click", function(){
+  $( ".bt" ).on( "click", function(e){
 
     /*var person = {
            ename: $("#Employee").val(),
            job:   $("#Job").val(),
            mgr:$("#Manager").val()
        }*/
+       e.preventDefault();
+    e.stopPropagation();
 
        $('#target').html('sending..');
 
        $.ajax({
            url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/',
-           type: 'post',
-           dataType: 'json',
+           method: 'POST',
            data: {
                   ename: $("#Employee").val(),
                   job:   $("#Job").val(),
                   mgr:   $("#Manager").val(),
                   sal:   $("#Salary").val(),
                   deptno:$("#Department").val()
-              },
-           success: function (data) {
-               $('#target').html(data.msg);
-               console.log("a");
-           }
+              }
+            })
+   .done(function( msg ) {
+    AjaxSucceeded(msg);
 
        });
 
@@ -298,21 +298,23 @@ Get the id Value in a Variable and use it for the Rest webservice
 
 
 
-    $( ".bts" ).on( "click", function(){
+    $( ".bts" ).on( "click", function(e){
 
       /*var person = {
              ename: $("#Employee").val(),
              job:   $("#Job").val(),
              mgr:$("#Manager").val()
          }*/
-
+         e.preventDefault();
+        e.stopPropagation();
          $('#target').html('sending..');
 
          $.ajax({
              url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/'+id,
-             type: 'PUT',
-             dataType: 'json',
-             "Content-Type": "application/json",
+             method: 'PUT',
+             "Content-Type":'application/json',
+             crossDomain: true,
+             processData: false,
              data: {
                     empno: id,
                     ename: $("#Employee").val(),
@@ -320,8 +322,10 @@ Get the id Value in a Variable and use it for the Rest webservice
                     mgr:   $("#Manager").val(),
                     sal:   $("#Salary").val(),
                     deptno:$("#Department").val()
-                },
-             success: AjaxSucceedede
+                }
+                })
+                .done(function( msg ) {
+         AjaxSucceeded(msg);
 
          });
 
