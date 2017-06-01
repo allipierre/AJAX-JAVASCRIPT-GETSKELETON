@@ -27,3 +27,11 @@ function AjaxFailed(result) {
   "Your imaginary file has been deleted.",
   "success");
 }
+
+function AjaxError(result) {
+  swal(
+  'Oops...',
+  'Something went wrong!',
+  'error'
+)
+}

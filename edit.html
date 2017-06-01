@@ -270,7 +270,10 @@ Get the id Value in a Variable and use it for the Rest webservice
    .done(function( msg ) {
     AjaxSucceeded(msg);
 
-       });
+  }).fail(function( msg ) {
+      AjaxError(msg);
+
+           });
 
 
 
