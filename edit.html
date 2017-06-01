@@ -227,7 +227,8 @@ tr:nth-child(odd):hover {background: orange}
     </div>
 
   <button onclick="void(0);" class="bt button-primary" id="submit">submit</button>
-  <a  class="bts button button-primary" id="submit">update</a>
+  <a  onclick="void(0);" class="bts button button-primary" id="submite">update</a>
+    <!--<input class="bts button-primary" type="submit" value="update">-->
 </form>
 
 
@@ -310,13 +311,10 @@ Get the id Value in a Variable and use it for the Rest webservice
          $('#target').html('sending..');
 
          $.ajax({
-             url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/'+id,
-             method: 'PUT',
+             url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/updatesk/'+id,
+             method: 'POST',
              "Content-Type":'application/json',
-             crossDomain: true,
-             processData: false,
              data: {
-                    empno: id,
                     ename: $("#Employee").val(),
                     job:   $("#Job").val(),
                     mgr:   $("#Manager").val(),
