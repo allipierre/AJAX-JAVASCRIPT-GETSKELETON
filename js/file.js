@@ -19,7 +19,7 @@ function AjaxSucceeded(result) {
 
 function AjaxSucceedede(result) {
   swal("Updated!",
-  "Your imaginary file has been deleted.",
+  "Your changes are succefully saved",
   "success");
 }
 function AjaxFailed(result) {
