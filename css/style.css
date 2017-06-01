@@ -156,3 +156,43 @@
     padding-bottom: 40px !important;
     padding-top: 2px !important;
 }
+
+footer {
+    margin-top: 5rem;
+}
+
+.prefooter {
+    background-color: rgb(68, 68, 68);
+    padding-top: 16px;
+}
+
+.footer-main {
+    border-top: solid 1px rgb(227, 227, 227);
+    padding-top: 16px;
+    z-index: 1000;
+}
+.prefooter-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 2px solid rgb(49, 163, 221);
+    padding-bottom: 11px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.prefooter ul {
+    list-style: none;
+}
+
+.prefooter li {
+    line-height: normal;
+}
+
+footer a{
+      color: rgb(187, 187, 187);
+      text-decoration: none;
+}
+.ewf{
+    color: rgb(187, 187, 187);
+}
