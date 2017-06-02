@@ -163,13 +163,13 @@ tr:nth-child(odd):hover {background: orange}
 <script>
 
 
-
+var de;
 
         $.ajax({
             url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/"
         }).done(function(data) {
           for (var i=0; i < data.items.length; i++){
-           $('.dynav').append("<div class='panel panel-light-content hidden-xs hidden-sm' data-automation='jobseeker-jobs'>"+
+            de="<div class='panel panel-light-content hidden-xs hidden-sm' data-automation='jobseeker-jobs'>"+
              "<div class='panel-heading'>"+
                  "<small class='text-muted'></small>"+
                  "<p class='headline3'><strong><a href='/en/employer/groupe-agri-revolution/recherche-dun-technicien-agricole.html'>"+data.items[i].ename+"</a></strong> <small>(Full time)</small></p>"+
@@ -192,9 +192,13 @@ tr:nth-child(odd):hover {background: orange}
                      "</li>"+
                  "</ul>"+
              "</div>"+
-           "</div>"+"<p></p>");
+           "</div>"+"<p></p>";
+         $('.dynav').append(de);
          }
+
         });
+
+
 
 
 

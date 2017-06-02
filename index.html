@@ -32,6 +32,44 @@ $(function(){
 });
 </script>
 
+<style>
+html{
+  background: rgba(182, 184, 187, 0.22) !important;
+}
+
+.header{
+  margin-top: 14rem !important;
+}
+
+.ner{
+  max-width: 800px !important;
+  padding-top: 50px !important;
+}
+
+.header {
+
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+
+.navbar-list{
+  float: right !important;
+}
+
+@media (max-width: 750px){
+
+.two.columns {
+    padding-top: 14px !important;
+}
+}
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 163, 221) !important;
+    border-color: rgb(49, 163, 221) !important;
+}
+</style>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -40,6 +78,9 @@ $(function(){
 <body>
   <nav class="navbar">
       <div class="container">
+        <div class="two columns twoc">
+        <img src="https://www.tryfoexnow.com/c/foex-site/2015/images/foex-logo.png" class="u-max-full-width" ></a>
+       </div>
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="index">Home</a></li>
           <li class="navbar-item">
@@ -83,19 +124,20 @@ $(function(){
     </nav>
 
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="margin-top:10em;">
-    <div class="row">
-      <div class="two-thirds column">
-        <h1>Welcome, this a Website for Developer.</h1>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the</p>
+
+    <div class="container ner">
+        <section class="header">
+          <h3>Get a <strong>website</strong> created <strong>for</strong> your business for as low as <span class="price"><strong>GHC 299</strong></span><span class="typed-cursor">|</span> per year.</h3>
+          <a class="button button-primary">Get yours now</a>
+          <a class="button">Know more</a>
+
+          <p>Note: This offer is valid until 30th June, 2017</p>
+
+        </section>
       </div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/developer.jpg">
-      </div>
-    </div>
-  </div>
+
+
+  <!--
 
   <div class="container" style="margin-top:10em;">
     <div class="row">
@@ -121,6 +163,18 @@ $(function(){
     </div>
   </div>
 
+  <div class="container" style="margin-top:10em;">
+    <div class="row">
+      <div class="two-thirds column">
+        <h1>Welcome, this a Website for Developer.</h1>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the</p>
+      </div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/developer.jpg">
+      </div>
+    </div>
+  </div>
+-->
 
 </body>
 
@@ -187,5 +241,14 @@ $(function(){
 $(function(){
 $("#header").load("header.html");
 });
+document.addEventListener("DOMContentLoaded", function(){
+	Typed.new(".price", {
+		strings: ["GHC 500", "<strong>GHC 299</strong>"],
+		typeSpeed: 1,
+		loop: true
+	});
+});
+
 </script>
  <script type="text/javascript"  src="js/file.js"></script>
+ <script type="text/javascript"  src=" js/typed.js"></script>
