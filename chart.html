@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Website to help People">
+  <meta name="author" content="Alli Pierre Yotti">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+   <script type="json/javascript"  src="js/file.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="js/site.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+   <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+ <script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script src="js/sweetalerte.min.js"></script>
+   <link href="css/sweetalerte.css" rel="stylesheet">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+  .panel {
+    border-bottom: 2px solid rgb(49, 163, 221);
+    border-top: 2px solid rgb(49, 163, 221);
+    border-right: 2px solid rgb(49, 163, 221);
+    border-left: 2px solid rgb(49, 163, 221);
+}
+.tre{
+  background: rgb(15, 160, 206) !important;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+s{
+
+}
+
+.de{
+  background-color: rgb(255, 0, 0) !important;
+  border-color: rgb(255, 0, 0) !important;
+}
+
+.dr{
+  color: rgb(255, 255, 255) !important;
+    background-color: rgb(88, 88, 88) !important;
+    border-color: rgb(88, 88, 88) !important;
+}
+
+th,td{
+  text-align: center;
+}
+
+able.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: rgb(51, 51, 51) !important;
+    border: 1px solid rgb(30, 174, 219) !important;
+    background-color: rgb(255, 255, 255) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+    background: rgb(30, 174, 219) !important;
+}
+
+.ef {
+    background: rgb(30, 174, 219) !important;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+tr:nth-child(even):hover {background: red}
+tr:nth-child(odd):hover {background: orange}
+
+
+  </style>
+
+</head>
+<body>
+  <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="index">Home</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
+            <div id="codeNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="list">Dynamic List</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="datatable">Datatable</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#utilities">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a>
+            <div id="moreNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton">On Github</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#browser-support">Browsers</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton#extensions">Extensions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton/releases">Versions</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top:5em;">
+    <div class="row">
+      <div class="two-thirds column">
+        <h1>Welcome, this a Website for Developer.</h1>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+
+<script>
+$.ajax({
+    url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/8442"
+}).done(function(data) {
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Historic World Population by Region'
+    },
+    subtitle: {
+        text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+    },
+    xAxis: {
+        categories: [data.ename, data.job, 'Asia', 'Europe', 'Oceania'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Population (millions)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' millions'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Year 1800',
+        data: [107, 31, 635, 203, 2]
+    }, {
+        name: 'Year 1900',
+        data: [133, 156, 947, data.sal, data.empno]
+    }, {
+        name: 'Year 2012',
+        data: [1052, 954, 4250, 740, 38]
+    }]
+});
+
+
+});
+</script>
+
+
+
+
+</body>
+    <footer>
+        <!-- Pre-footer -->
+        <div class="prefooter">
+          <div class="container">
+            <div class="row">
+              <div class="one-third column">
+              <img src="https://www.tryfoexnow.com/c/foex-site/2015/images/foex_logo_light.png" class="img-responsive"  width="80%" height="80%">
+                <p class="ewf">We specialize in creating powerful <br>plugins that enhance Oracle APEX.</p>
+                <p class="ewf" >Our low-code Enterprise Rapid <br>Application Development solution <br>enables anyone with basic PL/SQL knowledge to built large-scale web applications declaratively.</p>
+              </div>
+
+              <div class="one-third column">
+                <h6 class="prefooter-header">Browse Products</h6>
+                <ul>
+                  <li><a href="#">Database</a></li>
+                  <li><a href="#" target="_blank">Graphic design</a></li>
+                  <li><a href="#" target="_blank">Software Development</a></li>
+                  <li><a href="#" target="_blank">Hardware Development</a></li>
+                    <li><a href="#" target="_blank">Hardware Development</a></li>
+                      <li><a href="#" target="_blank">Hardware Development</a></li>
+                        <li><a href="#" target="_blank">Hardware Development</a></li>
+                </ul>
+              </div>
+
+              <div class="one-third column">
+                <h6 class="prefooter-header">Help and Support</h6>
+                <ul>
+                  <li><a href="#">Graphic design</a></li>
+                  <li><a href="#" target="_blank">Obtaining my software</a></li>
+                  <li><a href="#" target="_blank">Renewing my support service renewal</a></li>
+                  <li><a href="#" target="_blank">Reviewing my support service renewal</a></li>
+                    <li><a href="#" target="_blank">Hardware Development</a></li>
+                      <li><a href="#" target="_blank">Hardware Development</a></li>
+                        <li><a href="#" target="_blank">Hardware Development</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-main">
+          <div class="container">
+            <div class="row">
+
+              <div class="two-thirds column">
+                <p>© Copyright 2017 Web-Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</html>
+ <script type="text/javascript"  src="js/file.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.js"></script>
