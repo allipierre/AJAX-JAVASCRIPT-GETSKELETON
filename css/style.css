@@ -363,12 +363,13 @@ job-search-content .panel-footer li:last-child {
 
 
 .btn-submit, .btn-info, .save {
-    background-color: rgb(5, 114, 206)!important;
+    background-color: rgb(255, 0, 0) !important;
     color: rgb(255, 255, 255) !important;
     border: 0;
     padding: 8px 12px;
     border-width: .1rem;
     border-color: rgb(4, 100, 181);
+    text-decoration: none;
 }
 
 .fa-eye{
