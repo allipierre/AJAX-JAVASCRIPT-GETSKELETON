@@ -147,97 +147,52 @@ tr:nth-child(odd):hover {background: orange}
 
 
 
-    <div class="container">
 
-  <table id="photos" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr class="ef">
-                <th>ID</th>
-                <th>Employee</th>
-                <th>job</th>
-                <th>hiredate</th>
-                <th>Manager</th>
-                <th>Salary</th>
-                <th>Department</th>
-                <th>Action</th>
-                <th>Action</th>
-                <th>Action</th>
-            </tr>
-        </thead>
+<div class="dynav container">
 
-    </table>
-    </div>
+  </div>
 
-    <script>
-
-    var arrayReturn = [];
-            $.ajax({
-                url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/",
-                async: false,
-                dataType: 'json',
-                success: function (data) {
-					for(var i = 0; i < data.items.length; i++){
-						arrayReturn.push([ data.items[i].empno,data.items[i].ename, data.items[i].job, data.items[i].hiredate,data.items[i].mgr,data.items[i].sal,data.items[i].deptno,'<a id="submit" class="button button-primary">Edit</a>','<a id="drt" class="button de button-primary" href="#">Show</a>','<a id="dr" class="button dr button-primary">Delete</a>']);
-					}
-				inittable(arrayReturn);
-                }
-            });
-
-            function inittable(data) {
-		//console.log(data);
-		$('#photos').DataTable( {
-			"aaData": data
-		} );
-	}
-
-  /*
-   Get the Id here and set it as LocalStorage to passe it in another Page
-
-  */
-
-var first_lov;
-  $( "td #submit" ).on( "click", function(){
-   first_lov=$(this).closest('tr').find('.sorting_1').text();
-   localStorage.setItem("IDS",first_lov);
-   window.location.replace("edit");
-   console.log(s);
-});
+<script>
 
 
 
 
-$( "td #dr" ).on( "click", function(){
-first_lov=$(this).closest('tr').find('.sorting_1').text();
-$(this).closest('tr').css('display','none');
-var ids=parseInt(first_lov);
-console.log(ids);
-     $('#target').html('sending..');
+        $.ajax({
+            url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/"
+        }).then(function(data) {
+          for (var i=0; i < data.items.length; i++){
+           $('.dynav').append("<div class='panel panel-light-content hidden-xs hidden-sm' data-automation='jobseeker-jobs'>"+
+             "<div class='panel-heading'>"+
+                 "<small class='text-muted'></small>"+
+                 "<p class='headline3'><strong><a href='/en/employer/groupe-agri-revolution/recherche-dun-technicien-agricole.html'>"+data.items[i].ename+"</a></strong> <small>(Full time)</small></p>"+
+             "</div>"+
+             "<div class='panel-footer clearfix'>"+
+                 "<ul class='list-inline'>"+
+                     "<li class='panel-footer-icon-wrapper'>"+
+                         "<i class='icon icon-dot-circled'></i>"+
+                         "<a href='/en/employer/groupe-agri-revolution.html' target='_blank' class='js-company-name'>"+
+                             data.items[i].job+"</a>"+
+                     "</li>"+
 
-     $.ajax({
-         url: 'https://apex.oracle.com/pls/apex/pierrealli/hr/employees/'+ids,
-         type: 'DELETE',
-         Contenttype:'application/json',
-         dataType: "json",
-        success: AjaxSucceeded,
-         error: AjaxFailed
+                      "<li class='panel-footer-icon-wrapper'>"+
+                      "<i class='icon icon-location'></i> ${task.name}</li>"+
 
-     });
-
-
-
-  });
+                     "<li class='panel-footer-icon-wrapper'>"+
+                         "<i class='icon icon-bookmark'></i> ${task.name}</li>"+
+                     "<li class='pull-right'>"+
+                         "<a href='/en/employer/groupe-agri-revolution/recherche-dun-technicien-agricole.html' class='btn btn-info pull-right icon-eye' ><span class=' fa fa fa-eye'></span> View Job</a>"+
+                     "</li>"+
+                 "</ul>"+
+             "</div>"+
+           "</div>"+"<p></p>");
+         }
+        });
 
 
 
 
 
     </script>
-
-
-
-
-
-
 
 
 
