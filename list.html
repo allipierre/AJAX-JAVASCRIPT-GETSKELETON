@@ -49,7 +49,7 @@ color: rgb(255, 255, 255);
 text-align: center;
 }
 s{
-  
+
 }
 
 .de{
@@ -167,7 +167,7 @@ tr:nth-child(odd):hover {background: orange}
 
         $.ajax({
             url: "https://apex.oracle.com/pls/apex/pierrealli/hr/employees/"
-        }).then(function(data) {
+        }).done(function(data) {
           for (var i=0; i < data.items.length; i++){
            $('.dynav').append("<div class='panel panel-light-content hidden-xs hidden-sm' data-automation='jobseeker-jobs'>"+
              "<div class='panel-heading'>"+
